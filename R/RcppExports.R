@@ -6,6 +6,7 @@ rcpp_hello_world <- function() {
 }
 
 rcppcor <- function(vec, mat) {
+    print("Correlating vec to matrix")
     .Call(`_KGtools_rcppcor`, vec, mat)
 }
 
